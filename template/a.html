@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bin/w3.css"/>
+    <style>
+    textarea {
+        display: none;
+    }
+    </style>
+    <title>blog</title>
+</head>
+<body>
+<textarea class="markdown">
+
+# 2017
+
+Februari
+
+1. [Google](http://google.com)
+
+</textarea>
+    <div class="w3-red w3-container w3-center">
+        <h1>Blog</h1>
+    </div>
+    <div class="w3-container">
+        <div class="markdown"></div>
+    </div>
+    <div class="w3-red w3-container w3-center">
+        <p><a href="a.html">Kembali ke halaman beranda</a></p>
+    </div>
+    <script src="../bin/jquery.min.js"></script>
+    <script src="../bin/marked.min.js"></script>
+    <script>
+    $("div.markdown").html(marked($("textarea.markdown").val()))
+    </script>
+</body>
+</html>
